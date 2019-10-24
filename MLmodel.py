@@ -14,7 +14,7 @@ signaldata = pd.read_csv(file_path)
 
 features = ['RMSEVM', 'MAXEVM', 'EYEAMP', 'EYESNR', 'EYEDELAY', 'EYEWIDTH', 'ENERGY', 'BPR', 'MEANEIGEN']
 
-# FAKE INPUT DATA
+# INPUT DATA
 signaldata = pd.DataFrame(np.random.randint(1, 10, size=(10, len(features))), columns=features)
 signaldata['LABEL'] = np.random.randint(0, 2, size=(10, 1))
 
